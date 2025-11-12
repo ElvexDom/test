@@ -1,11 +1,28 @@
-# Environnement virtuel
+# environnement virtuel
 
 ```bash
-python -m venv .env
+python -m venv .venv
 ```
 
-**Windows :**
+Windows
 
 ```bash
-.env\Scripts\activate
+python -m venv .venv
+.venv/Scripts/Activate.ps1
+```
+
+Mac/Linux
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Freeze des versions
+```bash
+pip freeze > requirements.txt
+```
+
+Install du `requirements.txt`
+```bash
+pip install -r requirements.txt
 ```
